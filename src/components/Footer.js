@@ -3,5 +3,4 @@ export function renderFooter() {
     footer.innerHTML = `
       <p>&copy; 2024 My Website</p>
     `;
-}
-  
+};

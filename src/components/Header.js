@@ -8,4 +8,4 @@ export function renderHeader() {
         <a href="#">Contact</a>
       </nav>
     `;
-}  
+};
