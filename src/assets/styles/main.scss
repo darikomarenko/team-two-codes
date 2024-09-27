@@ -11,6 +11,15 @@ header {
   text-align: center;
 }
 
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: aqua;
+}
+
 main {
   padding: 20px;
   min-height: 80vh;
