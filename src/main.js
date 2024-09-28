@@ -6,7 +6,7 @@ import { renderVideoBlock } from './components/Video-block.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   renderHeader();
-  renderMap();
   renderVideoBlock()
+  renderMap();
   renderFooter();
 });

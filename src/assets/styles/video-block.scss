@@ -1,9 +1,31 @@
+@import "main.scss";
+
+.videoBlock__h2 {
+  @include heading-font-large;
+  color: black;
+  
+  line-height: 62px;
+  margin-bottom: 4px;
+  margin-top: 0px;
+  font-size: clamp(30px, 3vw, 52px);
+}
+.videoBlock__h5{
+  display: flex;
+  align-items: center;
+  @include heading-font-small;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+}
+.videoBlock__line{
+padding-right: 10px;
+}
 .videoBlock {
     display: flex;
     justify-content: center; 
     align-items: flex-start; 
     position: relative; 
-    height: 50vh;
+    height: 55vh;
   }
   
   .videoBlock__main {
@@ -11,7 +33,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    max-width: 600px; 
+    width: 65vw;
+    // width: clamp(80vw, 75vw, 65vw); 
+    
     margin: 0 auto; 
    
   }
@@ -24,49 +48,48 @@
 
   }
   .videoBlock__img{
-    height: 100%;
+    height: 60%;
   }
 
-  #videoPlayer{
-    width: 600px;
-     height: 300px
-  }
+ 
   
   .videoBlock__tabs {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 100%;
   }
 
   .videoBlock__tabs button {
     flex: 1; 
+    height: 50px;
     margin: 0 10px;
     padding: 10px;
     cursor: pointer;
-    border: none;
-    background-color: #ddd;
+    border: 1px solid rgb(85, 85, 85);
+    background-color: #ffffff00;
   }
   
   .videoBlock__content iframe {
-    width: 100%; 
-    height: auto;
-    max-width: 560px;
+    width: 100%;  
+    height: 400px;
+   
   }
-  
+  .videoBlock__content {
+    width: 100%;
+    text-align: center;
+  }
 
   .videoBlock__tabs button.active {
     background-color: rgb(251, 91, 17);
+    border: none;
     color: white;
   }
   
-  .videoBlock__content {
-    text-align: center;
-  }
   
-  .videoBlock__content video {
-    width: 100%;
-    max-width: 600px;
-  }
+  
+  
 
  /*  спиннер */
 .spinner {

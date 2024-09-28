@@ -5,8 +5,8 @@ export function renderVideoBlock() {
     videoBlock.innerHTML = `
     <div class="videoBlock">
         <div class="videoBlock__main">
-            <h5>How To Process</h5>
-            <h2>Steps in the Construction Process</h2>
+        <h5 class="videoBlock__h5"> <img src="./public/images/Video-block/Line.png" alt="line" class="videoBlock__line"> How To Process</h5>
+            <h2 class="videoBlock__h2">Steps in the Construction Process</h2>
             <div class="videoBlock__tabs">
                 <button data-video="https://www.youtube.com/embed/xwH6Gvw8YUE" class="active">01. Planning and Design</button>
                 <button data-video="https://www.youtube.com/embed/S0EAwxjM6dc">02. Permitting and Approvals</button>
