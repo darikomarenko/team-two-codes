@@ -1,0 +1,143 @@
+@import "main.scss";
+#reviews{
+    height: 50vh;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  
+}
+.reviews{
+    height: 100%;
+    
+}
+.reviews__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 70vw;
+    height: 100%;
+    margin: 0 auto;
+}
+.reviews__swiper-slide {
+    display: flex
+}
+.reviews__h2 {
+    @include heading-font-large;
+    color: black;
+    
+    line-height: 62px;
+    margin-bottom: 4px;
+    margin-top: 0px;
+    font-size: clamp(30px, 3vw, 52px);
+    text-align: left;
+    align-self: flex-start;
+  }
+  .reviews__h5{
+    display: flex;
+    align-items: center;
+    @include heading-font-small;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+  }
+ .testimonial-quate{
+    margin-right: 10px;
+ }
+  #testimonial-text{
+    @include text-font-medium; 
+    font-size: 32px;
+    line-height: 42px;
+}
+#testimonial-name{
+    @include heading-font-small;
+    font-size: 32px;
+font-weight: 600;
+line-height: 42px;
+margin-top: 0;
+margin-bottom: 0;
+}
+#testimonial-position{
+    @include text-font-medium; 
+    font-size: 24px;
+font-weight: 400;
+line-height: 34px;
+margin-top: 0;
+margin-bottom: 0
+}
+  .reviews__line{
+  padding-right: 10px;
+  }
+  .reviews__aside {
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    height: 100%;
+    @media screen and (max-width: 1440px) {
+      display: none;
+    }
+  }
+  .reviews__img{
+    height: 60%;
+  }
+
+  .reviews__testimonial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testimonial-account{
+    display: flex;
+    align-items: center;
+}
+
+.reviews__text-content {
+    width: 60%;
+}
+
+.reviews__circle-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.reviews__profile-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Плавная анимация */
+}
+
+.reviews__profile-photo:hover {
+    transform: scale(1.5); 
+}
+
+.reviews__profile-photo--active {
+    border-color: orange;
+    transform: scale(1.5);
+}
+
+
+
+
+.reviews__pagination {
+    position: relative;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews__pointer {
+    position: absolute;
+    width: 2px;
+    height: 30px; 
+    background-color: orange; 
+    transition: left 0.3s ease; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+
+
