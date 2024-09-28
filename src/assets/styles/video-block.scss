@@ -1,0 +1,94 @@
+.videoBlock {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    position: relative; 
+    height: 50vh;
+  }
+  
+  .videoBlock__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 600px; 
+    margin: 0 auto; 
+   
+  }
+  
+  .videoBlock__aside {
+    position: absolute;
+    right: 0; 
+    top: 0; 
+    height: 100%;
+
+  }
+  .videoBlock__img{
+    height: 100%;
+  }
+
+  #videoPlayer{
+    width: 600px;
+     height: 300px
+  }
+  
+  .videoBlock__tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  .videoBlock__tabs button {
+    flex: 1; 
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #ddd;
+  }
+  
+  .videoBlock__content iframe {
+    width: 100%; 
+    height: auto;
+    max-width: 560px;
+  }
+  
+
+  .videoBlock__tabs button.active {
+    background-color: rgb(251, 91, 17);
+    color: white;
+  }
+  
+  .videoBlock__content {
+    text-align: center;
+  }
+  
+  .videoBlock__content video {
+    width: 100%;
+    max-width: 600px;
+  }
+
+ /*  спиннер */
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 -20px; 
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid rgb(251, 91, 17); 
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 10; 
+    display: none; 
+  }
+  
+  /* Анимация  спиннера */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  
+  
