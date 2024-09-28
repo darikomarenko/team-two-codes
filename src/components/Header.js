@@ -1,3 +1,5 @@
+import '../assets/styles/header.scss';
+
 export function renderHeader() {
     const header = document.getElementById('header');
     header.innerHTML = `
