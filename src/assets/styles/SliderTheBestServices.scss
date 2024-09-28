@@ -3,10 +3,22 @@
 .sliderTheBestServices {
     max-width: 720px;
     width: 100%;
+    // width: clamp(240px,50vw,720px);
     margin: auto;
     overflow-x: scroll;
     white-space: nowrap;
     user-select: none;
+    // margin-bottom: 7%;
+
+    @media (max-width:1200px) {
+        max-width: 520px;
+        // margin-bottom: 0;
+    }
+
+    @media (max-width:900px) {
+        max-width: 380px;
+        // margin-bottom: 0;
+    }
 }
 
 .sliderTheBestServices::-webkit-scrollbar {
@@ -21,6 +33,16 @@
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+
+    @media (max-width:1200px) {
+        width: 230px;
+        height: 290px;
+    }
+
+    @media (max-width:900px) {
+        width: 160px;
+        height: 190px;
+    }
 }
 
 .slide>.text {
@@ -30,6 +52,17 @@
     top: 300px;
     left: 25px;
     width: 200px;
+
+    @media (max-width:1200px) {
+        top: 140px;
+        left: 15px;
+    }
+
+    @media (max-width:900px) {
+        top: 90px;
+        left: 5px;
+        width: 130px;
+    }
 }
 
 .text p {
@@ -53,11 +86,11 @@
 }
 
 .text>.title {
-    font-size: 20px;
+    font-size: clamp(9px,1.3vw,20px);
     text-decoration: underline;
 }
 
 .text>.sub {
-    font-size: 15px;
+    font-size: clamp(7px,1.2vw,15px);
     text-wrap: wrap;
 }
