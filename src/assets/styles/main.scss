@@ -6,6 +6,10 @@ body {
   padding: 0;
 }
 
+main {
+  padding: 0px;
+  min-height: 80vh;
+}
 
 // Для хедера
 @mixin text-font-header-navbar {
