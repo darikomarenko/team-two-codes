@@ -10,3 +10,127 @@ main {
   padding: 20px;
   min-height: 80vh;
 }
+
+// Для хедера
+@mixin text-font-header-navbar {
+  color: #FFF;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: capitalize;
+} 
+
+@mixin text-font-header-contacts {
+  color: #CDCDCD;
+  font-family: Barlow;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  text-transform: capitalize;
+} 
+
+// Для всей контентной части
+@mixin heading-font-large {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 158px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 138px;
+  text-transform: capitalize;
+} 
+
+@mixin heading-font-medium {
+  color: #0E0E0E;
+  font-family: Jost;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 62px;
+  text-transform: capitalize;
+} 
+
+// подзаголовки разделов (Latest Services, Our Testimonials и тд)
+@mixin heading-font-small {
+  color:  #0E0E0E;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 162.5% */
+  text-transform: capitalize;
+} 
+
+@mixin text-font-medium {
+  color: #555;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+} 
+
+// Кнопки
+@mixin btn-font-black {
+  color: #0E0E0E;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 162.5% */
+  text-transform: capitalize;
+} 
+
+@mixin btn-font-white {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 162.5% */
+  text-transform: capitalize;
+} 
+
+@mixin btn-font-orange {
+  color: #FB5B11;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 162.5% */
+  text-transform: capitalize;
+} 
+
+// Футер
+@mixin footer-font-navbar {
+  color: var(--FFFFFF, #FFF);
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+} 
+
+@mixin footer-font-navbar-heading {
+  color: var(--FFFFFF, #FFF);
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 162.5% */
+  text-transform: capitalize;
+} 
+
+@mixin footer-font-copyright {
+  color: rgba(255, 255, 255, 0.70);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  text-transform: capitalize;
+} 
