@@ -1,7 +1,7 @@
 import '../assets/styles/banner.scss';
 
 export function renderBanner() {
-    const banner = document.getElementById('main-content');
+    const banner = document.getElementById('banner'); //вот тут вместо main-content banner
     banner.innerHTML = `
     <div class="banner">
     <div class="banner__text">
