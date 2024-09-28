@@ -7,6 +7,7 @@ body {
 }
 
 main {
+  padding: 0px;
   min-height: 80vh;
   display: flex;
   justify-content: center;
@@ -123,9 +124,9 @@ $fourth-family: "Public Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
-  /* 162.5% */
-}
+  line-height: 26px; /* 162.5% */;
+  opacity: 0.7;
+} 
 
 @mixin footer-font-navbar-heading {
   color: var(--FFFFFF, #FFF);
