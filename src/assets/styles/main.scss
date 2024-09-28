@@ -7,9 +7,16 @@ body {
 }
 
 main {
-  padding: 20px;
   min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
+
+$first-family: "Jost", sans-serif;
+$second-family: "Barlow", sans-serif;
+$third-family: "DM Sans", sans-serif;
+$fourth-family: "Public Sans", sans-serif;
 
 // Для хедера
 @mixin text-font-header-navbar {
@@ -20,7 +27,7 @@ main {
   font-weight: 700;
   line-height: 26px;
   text-transform: capitalize;
-} 
+}
 
 @mixin text-font-header-contacts {
   color: #CDCDCD;
@@ -28,9 +35,10 @@ main {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
+  /* 171.429% */
   text-transform: capitalize;
-} 
+}
 
 // Для всей контентной части
 @mixin heading-font-large {
@@ -41,7 +49,7 @@ main {
   font-weight: 600;
   line-height: 138px;
   text-transform: capitalize;
-} 
+}
 
 @mixin heading-font-medium {
   color: #0E0E0E;
@@ -51,18 +59,19 @@ main {
   font-weight: 600;
   line-height: 62px;
   text-transform: capitalize;
-} 
+}
 
 // подзаголовки разделов (Latest Services, Our Testimonials и тд)
 @mixin heading-font-small {
-  color:  #0E0E0E;
+  color: #0E0E0E;
   font-family: Jost;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   text-transform: capitalize;
-} 
+}
 
 @mixin text-font-medium {
   color: #555;
@@ -71,7 +80,7 @@ main {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
-} 
+}
 
 // Кнопки
 @mixin btn-font-black {
@@ -80,9 +89,10 @@ main {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   text-transform: capitalize;
-} 
+}
 
 @mixin btn-font-white {
   color: #FFF;
@@ -90,9 +100,10 @@ main {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   text-transform: capitalize;
-} 
+}
 
 @mixin btn-font-orange {
   color: #FB5B11;
@@ -100,9 +111,10 @@ main {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   text-transform: capitalize;
-} 
+}
 
 // Футер
 @mixin footer-font-navbar {
@@ -111,8 +123,9 @@ main {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 162.5% */
-} 
+  line-height: 26px;
+  /* 162.5% */
+}
 
 @mixin footer-font-navbar-heading {
   color: var(--FFFFFF, #FFF);
@@ -120,9 +133,10 @@ main {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   text-transform: capitalize;
-} 
+}
 
 @mixin footer-font-copyright {
   color: rgba(255, 255, 255, 0.70);
@@ -131,6 +145,7 @@ main {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   text-transform: capitalize;
-} 
+}

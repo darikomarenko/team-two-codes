@@ -1,0 +1,63 @@
+@import './main.scss';
+
+.sliderTheBestServices {
+    max-width: 720px;
+    width: 100%;
+    margin: auto;
+    overflow-x: scroll;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.sliderTheBestServices::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.slide>.text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 300px;
+    left: 25px;
+    width: 200px;
+}
+
+.text p {
+    display: block;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.slide.visible>.text {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.1s linear;
+}
+
+.slide.hidden>.text {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.1s, opacity 0.1s linear;
+}
+
+.text>.title {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.text>.sub {
+    font-size: 15px;
+    text-wrap: wrap;
+}
