@@ -1,6 +1,165 @@
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+@import "main.scss";
+
+#footer {
+  background-color: #0E0E0E;
+}
+
+.footer-container {
+  padding: 140px 305px;
+  display: flex;
+  justify-content: space-between;
+  background-image: url( "../../../public/images/Footer/footer_bg-img.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  max-width: 1920px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.footer-col-1 {
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 12px;
+}
+
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.footer-logo-text-name {
+  @include footer-font-navbar;
+  font-size: 14px;
+}
+
+.footer-logo-text-company {
+  color: #FFF;
+  font-family: Jost;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 100% */
+  text-transform: capitalize;
+}
+
+.footer-welcome-text {
+  @include footer-font-navbar;
+  margin-bottom: 36px;
+  max-width: 400px;
+}
+
+.footer-opening-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-opening-hours-title {
+  @include footer-font-navbar-heading;
+}
+
+.footer-opening-hours-hours {
+  color: #FB5B11;
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-right: 30px;
+  min-width: 100px;
+}
+
+.footer-col-title {
+  @include footer-font-navbar-heading;
+}
+
+.footer-col-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @include footer-font-navbar;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col-item > a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.footer-col-item > a:hover {
+  color: #FB5B11;
+}
+
+.footer-copyright {
+  @include footer-font-copyright;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  background-color: #000;
+}
+
+.copyright-bold {
+  font-weight: bold;
+  color:#FFF;
+}
+
+@media (max-width: 1300px) {
+  .footer-container {
+    padding: 50px 80px;
+    flex-wrap: wrap;
   }
+
+  .footer-col-1 {
+    width: 100%;
+    flex-shrink: 0;
+    margin-bottom: 40px;
+  }
+
+  .footer-col {
+    gap: 15px;
+  }
+
+  .footer-col-items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+
+  .footer-copyright {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 460px) {
+  .footer-container {
+    padding: 30px 20px;
+  }
+
+  .footer-col {
+    gap: 5px;
+  }
+
+  .footer-col-items {
+    gap: 3px;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+}
