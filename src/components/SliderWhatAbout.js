@@ -1,6 +1,6 @@
 import '../assets/styles/sliderWhatAbout.scss';
 
-const path = 'images/WhatAbout/';
+const path = '../../public/images/WhatAbout/';
 const slides = [
     { src: path + "1.jpg", title: "Our Vision", sub: "+text\n+text\n+text" },
     { src: path + "2.jpg", title: "Core Values", sub: "+text\n+text\n+text" },

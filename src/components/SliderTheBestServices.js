@@ -1,7 +1,7 @@
 
 import '../assets/styles/sliderTheBestServices.scss'
 
-const path = 'images/TheBestServices/';
+const path = '../../public/images/TheBestServices/';
 const slides = [
     { src: path + "img (1).jpg", title: "Renewable Energy", sub: "This refers to energy sourced from natural processes" },
     { src: path + "img (2).jpg", title: "Building Contraction", sub: "This involves various stages likeplanning, design," },
@@ -91,6 +91,7 @@ export function renderSliderTheBestServices() {
     let cont = document.getElementsByClassName('theBestServices__blocks-slider');
     renderSlider(cont[0]);
 }
+
 
 
 
