@@ -25,7 +25,7 @@ export function renderWhatAbout() {
           </div>
           <div class="whatAbout__slider-cont"></div>
         </div>
-        <img src="..//images/WhatAbout/Architecture.png" class="whatAbout__architecture" alt="Architecture right">
+        <img src="/images/WhatAbout/Architecture.png" class="whatAbout__architecture" alt="Architecture right">
     `;
 
     
