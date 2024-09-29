@@ -12,6 +12,7 @@ import { renderReviews } from './components/Reviews.js';
 import renderTrustReliable from './components/TrustReliable.js';
 import { renderPrices } from './components/Prices.js';
 import { renderTrustSlider } from './components/TrustSlider.js';
+import { renderMembers } from './components/Members.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   renderHeader();
@@ -27,5 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
   renderPrices();
   renderMap();
   renderFooter();
-  renderReviews()
+  renderReviews();
+  renderMembers()
 });
