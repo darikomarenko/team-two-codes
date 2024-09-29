@@ -10,10 +10,10 @@ export function renderMap() {
 <div class="map-sign-up-form">
     <div class="map-sign-up-title">Sign up for our newsletter</br>to get weekly updates.<div class="map-sign-up-title-bg">Newsletter</div> </div>
     <div class="map-sign-up-input-container">
-        <input class="map-sign-up-input" type="text" placeholder="Inter Your Email">
-        <button class="map-sign-up-btn"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32" fill="none">
+        <input class="map-sign-up-input" type="text" placeholder="Enter Your Email">
+        <button class="map-sign-up-btn"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32" fill="#FB5B11">
             <rect y="0.0957031" width="38" height="31.3735" fill="white"/>
-            <path d="M13.643 20.3345C13.4458 20.5279 13.4458 20.8413 13.643 21.0346C13.8402 21.2279 14.1598 21.2279 14.357 21.0346L13.643 20.3345ZM24.5049 10.8803C24.5049 10.6069 24.2789 10.3853 24 10.3853L19.4557 10.3853C19.1769 10.3853 18.9508 10.6069 18.9508 10.8803C18.9508 11.1537 19.1769 11.3754 19.4557 11.3754L23.4951 11.3754L23.4951 15.3356C23.4951 15.609 23.7211 15.8307 24 15.8307C24.2789 15.8307 24.5049 15.609 24.5049 15.3356L24.5049 10.8803ZM14.357 21.0346L24.357 11.2304L23.643 10.5303L13.643 20.3345L14.357 21.0346Z" fill="#FB5B11"/>
+            <path d="M13.643 20.3345C13.4458 20.5279 13.4458 20.8413 13.643 21.0346C13.8402 21.2279 14.1598 21.2279 14.357 21.0346L13.643 20.3345ZM24.5049 10.8803C24.5049 10.6069 24.2789 10.3853 24 10.3853L19.4557 10.3853C19.1769 10.3853 18.9508 10.6069 18.9508 10.8803C18.9508 11.1537 19.1769 11.3754 19.4557 11.3754L23.4951 11.3754L23.4951 15.3356C23.4951 15.609 23.7211 15.8307 24 15.8307C24.2789 15.8307 24.5049 15.609 24.5049 15.3356L24.5049 10.8803ZM14.357 21.0346L24.357 11.2304L23.643 10.5303L13.643 20.3345L14.357 21.0346Z"/>
             </svg></button>
     </div>
 </div>
