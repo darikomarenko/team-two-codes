@@ -1,7 +1,7 @@
 
 import '../assets/styles/sliderTheBestServices.scss'
 
-const path = '../../public/images/TheBestServices/';
+const path = 'images/TheBestServices/';
 const slides = [
     { src: path + "img (1).jpg", title: "Renewable Energy", sub: "This refers to energy sourced from natural processes" },
     { src: path + "img (2).jpg", title: "Building Contraction", sub: "This involves various stages likeplanning, design," },

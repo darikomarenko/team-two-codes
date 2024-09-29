@@ -1,10 +1,11 @@
 import '../assets/styles/whatAbout.scss';
+import renderSlider from './SliderWhatAbout';
 
 export function renderWhatAbout() {
-    const whatAboutOur= document.getElementById('whatAboutOur');
+    const whatAboutOur = document.getElementById('whatAboutOur');
 
-    whatAboutOur.innerHTML= /*html*/`
-    <div>
+    whatAboutOur.innerHTML = /*html*/`
+    <div class="whatAbout__container">
           <div class="whatAbout__block">
             <div class="whatAbout__block-teame">
               <p class="whatAbout__block-chapter"><span class="whatAbout__block-span">—</span> About Us</p>
@@ -17,13 +18,16 @@ export function renderWhatAbout() {
                 <div>
                     <p class="whatAbout__block-portrait">25+ Experience</p>
                     <p class="whatAbout__reflection">25+ Experience</p>
-                </div>
+                </div class="whatAbout__block-slider">
                 
               </div>
             </div>
           </div>
-          <div class="whatAbout__slider"></div>
+          <div class="whatAbout__slider-cont"></div>
         </div>
         <img src="../../public/images/WhatAbout/Architecture.png" class="whatAbout__architecture" alt="Architecture right">
-    `
+    `;
+
+    
+    renderSlider(document.querySelector(".whatAbout__slider-cont"));
 }

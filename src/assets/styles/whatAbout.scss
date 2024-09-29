@@ -5,17 +5,34 @@
     display: flex;
     justify-content: center;
 
+
+
     &__block{
         display: flex;
         justify-content: space-between;
         max-width: 80%;
         width: 100%;
+
+    @media (max-width:1200px) {
+        flex-direction: column;
+    align-items: center;
+    }
+
+    @media (max-width:900px) {
+        margin-left: 10%;
+    }
+
+    }
+
+    &__block-span {
+        color: red;
     }
 
     &__block-teame{
         max-width: 50%;
         width: 100%;
         padding-left: 8%;
+
     }
 
     &__block-description {
@@ -42,6 +59,7 @@
     &__block-section{
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__block-portrait {
@@ -71,12 +89,17 @@
         color: white;
         background-color: #fb5b11;
         border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 42%;
     }
 
     &__block-btnImg{
         transform: rotate(140deg);
         max-width: 23%;
         width: 100%;
+        margin-left: 2%;
     }
 
     &__block-title{
@@ -89,5 +112,9 @@
         width: clamp(100px, 14vw, 286px);
         position: absolute;
         right: 0;
+
+        @media (max-width:900px) {
+            display: none;
+        }
     }
 }
