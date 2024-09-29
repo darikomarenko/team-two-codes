@@ -30,11 +30,11 @@ export function renderFooter() {
 <div class="footer-links footer-col">
     <div class="footer-links-title footer-col-title">Quick links</div>
     <ul class="footer-links-items footer-col-items">
-        <li class="footer-links-item footer-col-item"><a href="#">About Us</a></li>
-        <li class="footer-links-item footer-col-item"><a href="#">Our Services</a></li>
-        <li class="footer-links-item footer-col-item"><a href="#">Our Pricing</a></li>
-        <li class="footer-links-item footer-col-item"><a href="#">Our Team</a></li>
-        <li class="footer-links-item footer-col-item"><a href="#">Contact Us</a></li>
+        <li class="footer-links-item footer-col-item"><a href="#whatAboutOur">About Us</a></li>
+        <li class="footer-links-item footer-col-item"><a href="#videoBlock">Our Services</a></li>
+        <li class="footer-links-item footer-col-item"><a href="#prices">Our Pricing</a></li>
+        <li class="footer-links-item footer-col-item"><a href="#team">Our Team</a></li>
+        <li class="footer-links-item footer-col-item"><a href="#header">Contact Us</a></li>
     </ul>
 </div>
 

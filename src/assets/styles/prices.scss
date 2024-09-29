@@ -63,17 +63,21 @@
     max-width: 416px;
     height: 536px;
 
+
     &:hover {
         &::before {
             border-left: 50px solid #FB5B11;
+            transition: all 0.5s;
         }
         .prices__cards_card-button {
             background-color: #FB5B11;
             border: 1px solid #FB5B11;
             color: white;
+            transition: all 0.5s;
         }
 
         .prices__cards_card-button::after {
+            transition: all 0.5s;
             background-image: url('../../public/images/Banner/arrow.svg');
         }
     }

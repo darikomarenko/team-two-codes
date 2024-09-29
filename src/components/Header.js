@@ -49,14 +49,14 @@ export function renderHeader() {
             </ul>
             <ul class="navbar__info_bottom">
               <div class="navbar__info_links">
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Projects</li>
-                  <li>Testimonials</li>
-                  <li>Team</li>
-                  <li>Pricing</li>
-                  <li>Blog</li>
-                  <li>Contact</li>
+                  <li><a href="#banner">Home</a></li>
+                  <li><a href="#whatAboutOur">About</a></li>
+                  <li><a href="#theBestService">Projects</a></li>
+                  <li><a href="#reviews">Testimonials</a></li>
+                  <li><a href="#team">Team</a></li>
+                  <li><a href="#prices">Pricing</a></li>
+                  <li><a href="#prices">Blog</a></li>
+                  <li><a href="#footer">Contact</a></li>
               </div>
         </ul>
     </div>
@@ -76,14 +76,14 @@ export function renderHeader() {
           newMenu.classList.add('burger-menu-dropdown');
           newMenu.innerHTML = /*html*/ `
               <ul class="menu-list">
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Projects</li>
-                  <li>Testimonials</li>
-                  <li>Team</li>
-                  <li>Pricing</li>
-                  <li>Blog</li>
-                  <li>Contact</li>
+              <li><a href="#banner">Home</a></li>
+              <li><a href="#whatAboutOur">About</a></li>
+              <li><a href="#theBestService">Projects</a></li>
+              <li><a href="#reviews">Testimonials</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#prices">Pricing</a></li>
+              <li><a href="#prices">Blog</a></li>
+              <li><a href="#footer">Contact</a></li>
               </ul>
           `;
           header.appendChild(newMenu);
