@@ -84,7 +84,7 @@
 }
 
 .team__cta:hover {
-    background-color: #000;
+    background-color: #FB5B11;
     color: #fff;
 }
 
@@ -107,16 +107,20 @@
     width: 30%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .team__item {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: bold;
     color: #000;
     cursor: pointer;
     position: relative;
     margin-bottom: 20px;
+    @include heading-font-small;
+}
+.team__ul{
+    text-align: end;
 }
 
 .team__item span {
