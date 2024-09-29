@@ -1,0 +1,111 @@
+@import './main.scss';
+
+.theBestServices {
+    max-width: 1920px;
+    width: 94%;
+    padding-left: 5%;
+    cursor: default;
+    margin-bottom: 3%;
+    // overflow: hidden;
+
+    &__crane-img{
+        max-width: 100%;
+        width: 4%;
+    }
+
+    &__spane {
+        color: red;
+    }
+
+    &__blocks {
+        margin-left: 13%;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 1522px) {
+            flex-direction: column;
+            align-items: center;
+            margin-left: 0;
+            margin-bottom: 10%;
+        }
+    }
+
+    &__blocks-block {
+        max-width: 439px;
+        width: 100%;
+        margin-right: 5%;
+    }
+
+    &__block-name {
+        font-family: $first-family;
+        font-weight: 600;
+        font-size: clamp(9px, 1.3vw ,16px);
+    }
+
+    &__block-title {
+        font-family: $first-family;
+        font-weight: 600;
+        font-size: clamp(24px, 4vw,52px);
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 119%;
+    }
+
+    &__block-text {
+        font-size: $second-family;
+        font-weight: 400;
+        font-size: clamp(9px, 1.3vw ,16px);
+        color: #555;
+        padding-bottom: 7%;
+    }
+
+    &__btn {
+        height: 15vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-items: flex-start;
+
+        @media (max-width: 1522px) {
+            height: 10vh;
+        }
+
+        @media (max-width: 1200px) {
+            height: 9vh;
+        }
+
+        @media (max-width: 900px) {
+            height: 6vh;
+        }
+
+    }
+
+    &__btn-text {
+        font-family: $first-family;
+        font-weight: 600;
+        font-size: clamp(9px, 1vw ,16px);
+        padding: 1em 1em;
+        // // padding: ;
+        border: 1px solid #0e0e0e;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        width: 23%;
+    }
+
+    &__btn-img{
+        margin-top: 5%;
+        max-width: 100%;
+        width: 14%;
+
+        @media (max-width: 900px){
+            width: 8%;
+        }
+    }
+
+    &__btn-arrow{
+        max-width: 100%;
+        width: 22%;
+    }
+}
