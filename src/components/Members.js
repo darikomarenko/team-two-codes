@@ -24,10 +24,10 @@ export function renderMembers() {
 
   <div class="team__list">
     <ul class="team__ul">
-      <li class="team__item team__item--active" data-photo="../public/images/Members/person1.avif">Wade Warren<span>Architect</span></li>
-      <li class="team__item" data-photo="../public/images/Members/person2.avif">Brooklyn Simmons<span>Architect Designer</span></li>
-      <li class="team__item" data-photo="../public/images/Members/person3.avif">Jonson Duoing<span>Architect</span></li>
-      <li class="team__item" data-photo="../public/images/Members/person4.jpg">Esther Howard<span>Architect</span></li>
+      <li class="team__item team__item--active" data-photo="/images/Members/person1.avif">Wade Warren<span>Architect</span></li>
+      <li class="team__item" data-photo="/images/Members/person2.avif">Brooklyn Simmons<span>Architect Designer</span></li>
+      <li class="team__item" data-photo="/images/Members/person3.avif">Jonson Duoing<span>Architect</span></li>
+      <li class="team__item" data-photo="/images/Members/person4.jpg">Esther Howard<span>Architect</span></li>
     </ul>
   </div>
   
