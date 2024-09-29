@@ -47,16 +47,9 @@ export function renderMembers() {
   
     teamItems.forEach(item => {
       item.addEventListener('click', () => {
-        // Получаем путь к фото из атрибута data-photo
         const photo = item.getAttribute('data-photo');
-  
-        // Меняем фотографию
         photoElement.src = photo;
-  
-        // Удаляем класс active у всех элементов
         teamItems.forEach(i => i.classList.remove('team__item--active'));
-  
-        // Добавляем класс active на выбранный элемент
         item.classList.add('team__item--active');
       });
     });
