@@ -8,6 +8,7 @@ import { renderBanner } from './components/Banner.js';
 import { renderVideoBlock } from './components/Video-block.js';
 import renderTrustReliable from './components/TrustReliable.js';
 import { renderPrices } from './components/Prices.js';
+import { renderTrustSlider } from './components/TrustSlider.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   renderHeader();
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderSliderTheBestServices();
   renderWhatAbout();
   renderTrustReliable();
+  renderTrustSlider();
   renderVideoBlock();
   renderPrices();
   renderMap();
