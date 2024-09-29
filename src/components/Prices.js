@@ -5,7 +5,7 @@ export function renderPrices() {
     prices.innerHTML = `
     <div class="prices">
     <div class="prices__wrapper">
-    <h5 class="prices__title"> <img src="./public/images/Video-block/Line.png" alt="line" class="prices__line"> Our price table</h5>
+    <h5 class="prices__title"> <img src="../public/images/Video-block/Line.png" alt="line" class="prices__line"> Our price table</h5>
         <h2 class="prices__subtitle">Solutions For Price table</h2>
         <div class="prices__cards">
             <div class="prices__cards_card">
