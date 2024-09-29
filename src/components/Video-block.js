@@ -18,7 +18,7 @@ export function renderVideoBlock() {
             </div>
         </div>
         <div class="videoBlock__aside">
-            <img class="videoBlock__img" src="./public/images/Video-block/Architecture.png" alt="Architecture">
+            <img class="videoBlock__img" src=".images/Video-block/Architecture.png" alt="Architecture">
         </div>
     </div>
     `;
