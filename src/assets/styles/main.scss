@@ -55,10 +55,10 @@ $fourth-family: "Public Sans", sans-serif;
 @mixin heading-font-medium {
   color: #0E0E0E;
   font-family: Jost;
-  font-size: 52px;
+  font-size: clamp(30px, 3vw, 52px);
   font-style: normal;
   font-weight: 600;
-  line-height: 62px;
+  line-height: 120%;
   text-transform: capitalize;
 }
 
