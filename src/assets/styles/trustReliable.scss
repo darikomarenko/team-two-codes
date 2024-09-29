@@ -1,18 +1,27 @@
 @import './main.scss';
 
 .trustReliable {
-    display: flex;
     height:44vh;
     display: flex;
     justify-content: center;
     cursor: default;
 
+    @media (max-width: 1600px) {
+        margin-top: 10%;
+    }
+
     @media (max-width: 1200px){
         height: 37vh;
+        margin-top: 25%;
     }
 
     @media (max-width: 900px){
         height: 24vh;
+        margin-top: 13%;
+    }
+
+    @media (max-width: 500px) {
+        margin-top: 24%;
     }
 
     &__architecture{
@@ -20,9 +29,8 @@
         position: absolute;
         left: 0;
 
-        @media (max-width:1758px) {
-            // bottom: -80%;
-            // top: 140%;
+        @media (max-width:900px) {
+            display: none;
         }
     }
 

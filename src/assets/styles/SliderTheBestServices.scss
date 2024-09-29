@@ -3,21 +3,17 @@
 .sliderTheBestServices {
     max-width: 720px;
     width: 100%;
-    // width: clamp(240px,50vw,720px);
     margin: auto;
     overflow-x: scroll;
     white-space: nowrap;
     user-select: none;
-    // margin-bottom: 7%;
 
     @media (max-width:1200px) {
         max-width: 520px;
-        // margin-bottom: 0;
     }
 
     @media (max-width:900px) {
         max-width: 380px;
-        // margin-bottom: 0;
     }
 }
 
@@ -63,6 +59,16 @@
         left: 5px;
         width: 130px;
     }
+}
+
+.slider-title{
+    font-family: $first-family;
+    font-weight: 600;
+}
+
+.slider-sub{
+    font-family: $second-family;
+    font-weight: 400;
 }
 
 .text p {
