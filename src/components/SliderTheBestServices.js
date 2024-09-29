@@ -1,5 +1,5 @@
 
-import '../assets/styles/SliderTheBestServices.scss'
+import '../assets/styles/sliderTheBestServices.scss'
 
 const path = '../../public/images/TheBestServices/';
 const slides = [
@@ -48,9 +48,6 @@ class Scrollable {
     }
 }
 
-// function slideclick(el) {
-//     // console.log(el);
-// }
 
 function renderSlider(cont) {
     new Scrollable(cont);
@@ -59,8 +56,8 @@ function renderSlider(cont) {
         cont.innerHTML += `
         <div class="slide hidden" style="background-image: url('${(slide.src)}')" onclick="slideclick(this)">
             <div class="text">
-                <p class="title">${slide.title}</p>
-                <p class="sub">${slide.sub}</p>
+                <p class="title slider-title">${slide.title}</p>
+                <p class="sub" slider-sub>${slide.sub}</p>
             </div>
         </div>
         `;
@@ -94,6 +91,7 @@ export function renderSliderTheBestServices() {
     let cont = document.getElementsByClassName('theBestServices__blocks-slider');
     renderSlider(cont[0]);
 }
+
 
 
 

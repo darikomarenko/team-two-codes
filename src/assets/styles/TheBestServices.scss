@@ -6,7 +6,6 @@
     padding-left: 5%;
     cursor: default;
     margin-bottom: 3%;
-    // overflow: hidden;
 
     &__crane-img{
         max-width: 100%;
@@ -84,14 +83,22 @@
         font-family: $first-family;
         font-weight: 600;
         font-size: clamp(9px, 1vw ,16px);
-        padding: 1em 1em;
-        // // padding: ;
+        padding: 3%;
         border: 1px solid #0e0e0e;
         background-color: transparent;
         display: flex;
         justify-content: space-between;
         max-width: 100%;
         width: 23%;
+
+        @media (max-width:1200px) {
+            width: 20%;
+        }
+
+        @media (max-width:900px) {
+            width: 15%;
+            padding: 2%;
+        }
     }
 
     &__btn-img{
