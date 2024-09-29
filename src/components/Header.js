@@ -53,7 +53,7 @@ export function renderHeader() {
                   <li><a href="#whatAboutOur">About</a></li>
                   <li><a href="#theBestService">Projects</a></li>
                   <li><a href="#reviews">Testimonials</a></li>
-                  <li><a href="#team">Team</a></li>
+                  <li><a href="#members">Team</a></li>
                   <li><a href="#prices">Pricing</a></li>
                   <li><a href="#prices">Blog</a></li>
                   <li><a href="#footer">Contact</a></li>
@@ -80,7 +80,7 @@ export function renderHeader() {
               <li><a href="#whatAboutOur">About</a></li>
               <li><a href="#theBestService">Projects</a></li>
               <li><a href="#reviews">Testimonials</a></li>
-              <li><a href="#team">Team</a></li>
+              <li><a href="#members">Team</a></li>
               <li><a href="#prices">Pricing</a></li>
               <li><a href="#prices">Blog</a></li>
               <li><a href="#footer">Contact</a></li>

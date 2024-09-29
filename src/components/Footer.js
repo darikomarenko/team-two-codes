@@ -33,7 +33,7 @@ export function renderFooter() {
         <li class="footer-links-item footer-col-item"><a href="#whatAboutOur">About Us</a></li>
         <li class="footer-links-item footer-col-item"><a href="#videoBlock">Our Services</a></li>
         <li class="footer-links-item footer-col-item"><a href="#prices">Our Pricing</a></li>
-        <li class="footer-links-item footer-col-item"><a href="#team">Our Team</a></li>
+        <li class="footer-links-item footer-col-item"><a href="#members">Our Team</a></li>
         <li class="footer-links-item footer-col-item"><a href="#header">Contact Us</a></li>
     </ul>
 </div>
