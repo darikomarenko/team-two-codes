@@ -9,16 +9,18 @@ import { renderVideoBlock } from './components/Video-block.js';
 import { renderReviews } from './components/Reviews.js';
 
 import renderTrustReliable from './components/TrustReliable.js';
+import { renderPrices } from './components/Prices.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   renderHeader();
+  renderBanner();
   renderTheBestServices();
   renderSliderTheBestServices();
   renderWhatAbout();
   renderTrustReliable();
-  renderVideoBlock()
+  renderVideoBlock();
+  renderPrices();
   renderMap();
   renderFooter();
-  renderBanner();
   renderReviews()
 });
