@@ -20,9 +20,8 @@
         position: absolute;
         left: 0;
 
-        @media (max-width:1758px) {
-            // bottom: -80%;
-            // top: 140%;
+        @media (max-width:900px) {
+            display: none;
         }
     }
 

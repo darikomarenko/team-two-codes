@@ -1,4 +1,4 @@
-import '../assets/styles/TheBestServices.scss'
+import '../assets/styles/theBestServices.scss'
 
 export function renderTheBestServices() {
     const theBestServices = document.getElementById('theBestService');
