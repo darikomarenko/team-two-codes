@@ -1,0 +1,83 @@
+@import "main.scss";
+
+.trustSlider {
+    margin-top: 100px;
+    width: 100%;
+    overflow: hidden;
+
+    .swiper-container {
+        width: 100%;
+        position: relative;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        z-index: 10;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        cursor: pointer;
+
+        &::after {
+            font-size: 20px;
+        }
+
+        &.swiper-button-next {
+            right: 20px;
+        }
+        
+        &.swiper-button-prev {
+            left: 20px;
+        }
+
+        &:hover {
+            background-color: rgba(251, 91, 17, 0.5)
+        }
+    }
+
+    .trustSlider__title {
+        @include heading-font-small;
+        display: flex;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        align-items: center;
+        margin-left: 200px;
+    }
+      
+    .trustSlider__subtitle {
+        @include heading-font-medium;
+        margin-top: 0px;
+        margin-bottom: 60px;
+        line-height: 62px;
+        font-size: clamp(30px, 3vw, 52px);
+        margin-left: 200px;
+    }
+
+    .trustSlider__line {
+        padding-right: 10px;
+    }
+}

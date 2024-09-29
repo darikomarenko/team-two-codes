@@ -11,6 +11,7 @@ import { renderReviews } from './components/Reviews.js';
 
 import renderTrustReliable from './components/TrustReliable.js';
 import { renderPrices } from './components/Prices.js';
+import { renderTrustSlider } from './components/TrustSlider.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   renderHeader();
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderSliderTheBestServices();
   renderWhatAbout();
   renderTrustReliable();
+  renderTrustSlider();
   renderVideoBlock();
   renderBlog();
   renderVideoBlock();
