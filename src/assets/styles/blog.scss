@@ -2,8 +2,8 @@
 
 #blog {
     background-image: url("/public/images/Blog/Architecture.png");
-    background-size: contain;
-    background-position: left bottom;
+    background-size: 15%;
+    background-position: left 90%;
     background-repeat: no-repeat;
 }
 
@@ -13,8 +13,59 @@
     margin: auto;
     padding: 75px 305px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
+.blog__h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include heading-font-small;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.blog__line{
+    padding-right: 10px;
+}
+
+.blog__h2 {
+    @include heading-font-medium;
+    margin-top: 0;
+    margin-bottom: 65px;
+    text-align: center;
+}
+
+.blog-big-card-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.big-card__image {
+    max-width: 630px;
+}
+
+.blog-text {
+    color: #555;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    margin-bottom: 30px;
+}
+
+.big-card__body {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    padding-right: 25px;
+    max-width: 460px;
+}
 .blog-cards-container {
     display: flex;
     gap: 24px;
@@ -50,10 +101,10 @@
     margin-bottom: 17px;
     color:#555;
     font-family: Barlow;
-    font-size: 16px;
+    font-size: clamp(10px, 1.3vw, 16px);
     font-style: normal;
     font-weight: 400;
-    line-height: 26px; /* 162.5% */
+    line-height: 130%;
 }
 
 .blog-card__author-line {
@@ -69,10 +120,10 @@
 .blog-card__title {
     color: #0E0E0E;
     font-family: Jost;
-    font-size: 24px;
+    font-size: clamp(16px, 1.3vw, 24px);
     font-style: normal;
     font-weight: 600;
-    line-height: 34px; /* 141.667% */
+    line-height: 130%;
     text-transform: capitalize;
     margin-bottom: 14px;
 }
@@ -96,6 +147,42 @@
     fill:  #FB5B11;
 }
 
+.blog-btn {
+    outline: none;
+    border: 1px solid #0E0E0E;
+    background-color: #fff;
+    display: inline-flex;
+    padding: 17px 35px;
+    align-items: center;
+    gap: 10px;
+
+    color: #0E0E0E;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 162.5% */
+    text-transform: capitalize;
+    margin-top: 40px;
+    transition: all 0.5s;
+}
+
+.blog-btn:hover {
+    background-color: #FB5B11;
+    border: 1px solid #FB5B11;
+    color: #fff;
+}
+
+.blog-btn:hover svg {
+    transition: all 0.5s;
+}
+
+
+.blog-btn:hover svg {
+    fill: #fff;
+}
+
+
 @media (max-width: 1300px) {
     .blog-container {
       padding: 40px 80px;
@@ -106,17 +193,23 @@
     .blog-cards-container {
         flex-wrap: wrap;
     }
+
+    .blog-big-card-container {
+    flex-direction: column;
+    }
+
+    .blog__h2 {
+        margin-bottom: 25px;
+    }
 }
 
-.blog-cards-container {
-    display: flex;
-    gap: 24px;
-    justify-content: space-between;
-
-}
 
 @media (max-width: 460px) {
     .blog-container {
       padding: 20px 20px;
+    }
+
+    .blog__h2 {
+        margin-bottom: 10px;
     }
 }
