@@ -1,5 +1,5 @@
 
-import '../assets/styles/sliderTheBestServices.scss'
+import '../assets/styles/SliderTheBestServices.scss'
 
 const path = '../../public/images/TheBestServices/';
 const slides = [
