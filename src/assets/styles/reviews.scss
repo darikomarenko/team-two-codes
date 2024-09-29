@@ -1,7 +1,7 @@
 @import "main.scss";
 #reviews{
     height: 50vh;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 60px;
   
 }
@@ -19,7 +19,8 @@
     margin: 0 auto;
 }
 .reviews__swiper-slide {
-    display: flex
+    display: flex;
+    justify-content: space-between
 }
 .reviews__h2 {
     @include heading-font-large;
@@ -80,9 +81,10 @@ margin-bottom: 0
   }
 
   .reviews__testimonial {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    width: 85%;
 }
 .testimonial-account{
     display: flex;
@@ -119,25 +121,37 @@ margin-bottom: 0
 }
 
 
-
+// .reviews__pagination-container{
+//     width: 60px;
+// }
 
 .reviews__pagination {
     position: relative;
-    height: 50px;
+    width: 2px; /* Ширина линии */
+    background-color: gray; /* Цвет линии */
+    // height: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .reviews__pointer {
     position: absolute;
-    width: 2px;
-    height: 30px; 
-    background-color: orange; 
-    transition: left 0.3s ease; 
-    left: 50%; 
-    transform: translateX(-50%); 
+    padding-right: 30px;
+    left: 3px;
+    width: 0;
+    height: 5px;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 12px solid gray; /* Цвет уголка */
+    top: 0; /* Начальная позиция уголка */
+    transition: top 0.3s ease; /* Плавная анимация */
 }
+
+
+
 
 
 

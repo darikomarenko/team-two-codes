@@ -39,16 +39,17 @@ export function renderReviews() {
               </div>
 
             </div>
+            
             <div class="reviews__pagination">
               <div class="reviews__pointer"></div>
             </div>
 
             <div class="reviews__circle-images">
-              <img src="person1.jpg" class="reviews__profile-photo reviews__profile-photo--active" data-index="0"
-                alt="Brooklyn Simmons">
-              <img src="person2.jpg" class="reviews__profile-photo" data-index="1" alt="Olivia Harper">
-              <img src="person3.jpg" class="reviews__profile-photo" data-index="2" alt="Liam Bennett">
-            </div>
+        <img src="./public/images/Reviews/avatar1.jpeg" class="reviews__profile-photo reviews__profile-photo--active" data-index="0"
+          alt="Brooklyn Simmons">
+        <img src="./public/images/Reviews/avatar2.jpeg" class="reviews__profile-photo" data-index="1" alt="Olivia Harper">
+        <img src="./public/images/Reviews/avatar3.jpeg" class="reviews__profile-photo" data-index="2" alt="Liam Bennett">
+      </div>
           </div>
         </div>
       </div>
@@ -77,7 +78,7 @@ export function renderReviews() {
         }
     ];
   
-    // Инициализация Swiper
+  
     const swiper = new Swiper('.reviews__swiper-container', {
         slidesPerView: 1,
         pagination: {
@@ -86,31 +87,46 @@ export function renderReviews() {
         },
     });
   
-    // Получаем все фотографии (кругляшки)
+ 
     const profilePhotos = document.querySelectorAll('.reviews__profile-photo');
     const testimonialText = document.getElementById('testimonial-text');
     const testimonialName = document.getElementById('testimonial-name');
     const testimonialPosition = document.getElementById('testimonial-position');
   
-    // Добавляем событие клика на каждую фотографию
-    profilePhotos.forEach((photo, index) => {
-        photo.addEventListener('click', () => {
-            // Меняем отзыв, имя и должность
-            testimonialText.textContent = testimonials[index].text;
-            testimonialName.textContent = testimonials[index].name;
-            testimonialPosition.textContent = testimonials[index].position;
-  
-            // Удаляем класс "active" у всех фото
-            profilePhotos.forEach(p => p.classList.remove('reviews__profile-photo--active'));
-  
-            // Добавляем класс "active" на нажатое фото
-            photo.classList.add('reviews__profile-photo--active');
-      
-            // Переключаем слайд Swiper
-            swiper.slideTo(index);
-        });
-    });
 
+
+
+
+const pointer = document.querySelector('.reviews__pointer');
+
+
+const updatePointerPosition = (index) => {
+    const activePhoto = profilePhotos[index];
+    const photoRect = activePhoto.getBoundingClientRect();
+    const paginationRect = document.querySelector('.reviews__pagination').getBoundingClientRect();
+    
+    const newTop = photoRect.top - paginationRect.top + (photoRect.height / 2) - 6; // вычисляем позицию для уголка
+    pointer.style.top = `${newTop}px`; // перемещаем уголок
+};
+
+
+profilePhotos.forEach((photo, index) => {
+    photo.addEventListener('click', () => {
+
+        testimonialText.textContent = testimonials[index].text;
+        testimonialName.textContent = testimonials[index].name;
+        testimonialPosition.textContent = testimonials[index].position;
+
+  
+        profilePhotos.forEach(p => p.classList.remove('reviews__profile-photo--active'));
+
+
+        photo.classList.add('reviews__profile-photo--active');
+
+
+        updatePointerPosition(index);
+    });
+});
 
 
     
