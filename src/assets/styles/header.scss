@@ -114,6 +114,12 @@
   cursor: pointer;
 }
 
+
+.navbar__info_links li a {
+  text-decoration: none;
+  color: #FFF;
+}
+
 .navbar__info_links li:hover {
   text-decoration: underline;
   text-decoration-color:#FB5B11;

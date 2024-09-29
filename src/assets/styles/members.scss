@@ -1,0 +1,148 @@
+@import "main.scss";
+#members {
+    width: 100vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative; 
+}
+
+.team {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-right: auto; 
+    margin-top: 15%;
+}
+
+.team__aside {
+    position: absolute; 
+    right: 0; 
+    top: 0;
+    height: 100%;
+}
+
+.team__info {
+    width: 40%;
+    height: auto;
+}
+
+.team__title {
+    width: auto;
+    height: auto;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.team__h2 {
+    
+    @include heading-font-large;
+    color: black;
+    line-height: 62px;
+    font-size: clamp(30px, 3vw, 52px);
+    text-align: left;
+    margin-bottom: 4px;
+    margin-top: 0px;
+    align-self: flex-start;
+}
+
+.team__h5 {
+    display: flex;
+    align-items: center;
+    @include heading-font-small;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-self: flex-start;
+}
+
+.team__desc {
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+    @include text-font-medium;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.team__cta {
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    border: 1px solid rgb(14, 14, 14);
+    @include heading-font-small;
+}
+
+.team__cta:hover {
+    background-color: #FB5B11;
+    color: #fff;
+}
+
+.team__photo {
+    width: 300px; 
+    height: 400px; 
+    overflow: hidden; 
+    border-radius: 5px;
+}
+
+.team__photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+
+.team__list {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.team__item {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 20px;
+    @include heading-font-small;
+}
+.team__ul{
+    text-align: end;
+}
+
+.team__item span {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+}
+
+.team__item--active {
+    color: #FB5B11; 
+    font-size: 2em; 
+    text-decoration: underline;
+}
+
+
+.team__img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    
+    @media screen and (max-width: 1440px) {
+        display: none;
+    }
+}
