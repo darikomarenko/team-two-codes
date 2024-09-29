@@ -1,7 +1,7 @@
 @import "main.scss";
 
 .prices {
-    background-image: url('../../public/images/Prices/map-background.png');
+    background-image: url('..//images/Prices/map-background.png');
     background-size: cover;
     margin-bottom: 20px;
 }
@@ -78,7 +78,7 @@
 
         .prices__cards_card-button::after {
             transition: all 0.5s;
-            background-image: url('../../public/images/Banner/arrow.svg');
+            background-image: url('..//images/Banner/arrow.svg');
         }
     }
 }
@@ -148,14 +148,14 @@
         display: inline-block;
         width: 16px;
         height: 16px;
-        background-image: url('../../public/images/Prices/black-arrow.svg');
+        background-image: url('..//images/Prices/black-arrow.svg');
         background-size: contain;
         background-repeat: no-repeat;
         margin-left: 10px;
     }
 
     &:hover::after {
-        background-image: url('../../public/images/Banner/arrow.svg');
+        background-image: url('..//images/Banner/arrow.svg');
     }
 }
 

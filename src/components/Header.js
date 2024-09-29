@@ -5,7 +5,7 @@ export function renderHeader() {
     header.innerHTML =  /*html*/`
     <div class="navbar__adaptive">
     <span>
-        <img src="../../public/images/Header/house.svg" alt="logo">
+        <img src="..//images/Header/house.svg" alt="logo">
         <div>Conbuild</div>
     </span>
     <div id="burger-menu" class="burger-menu">
@@ -16,34 +16,34 @@ export function renderHeader() {
 </div>
 <nav class="navbar">
     <div class="navbar__logo">
-        <img src="../../public/images/Header/logo.svg" alt="logo">
+        <img src="..//images/Header/logo.svg" alt="logo">
     </div>
     <div class="navbar__info">
             <ul class="navbar__info_top">
                 <li>
-                    <img src="../../public/images/Header/pin.svg" alt="pin">
+                    <img src="..//images/Header/pin.svg" alt="pin">
                     2464 Royal Ln. Mesa, New York
                 </li>
                 <li>
-                    <img src="../../public/images/Header/mail.svg" alt="mail">
+                    <img src="..//images/Header/mail.svg" alt="mail">
                     Info @golzergmail.com
                 </li>
                 <li>
-                    <img src="../../public/images/Header/clock.svg" alt="clock">
+                    <img src="..//images/Header/clock.svg" alt="clock">
                     Mon - Sat 8:00 - 18:20
                 </li>
                 <li class="navbar__info_top_links">
                 <div class="icon-container">
-                    <img src="../../public/images/Header/facebook.svg" alt="facebook">
+                    <img src="..//images/Header/facebook.svg" alt="facebook">
                 </div>
                 <div class="icon-container">
-                    <img src="../../public/images/Header/inst.svg" alt="instagram">
+                    <img src="..//images/Header/inst.svg" alt="instagram">
                 </div>
                 <div class="icon-container">
-                    <img src="../../public/images/Header/twitter.svg" alt="twitter">
+                    <img src="..//images/Header/twitter.svg" alt="twitter">
                 </div>
                 <div class="icon-container">
-                    <img src="../../public/images/Header/linkedIn.svg" alt="linkedIn">
+                    <img src="..//images/Header/linkedIn.svg" alt="linkedIn">
                 </div>
                 </li>
             </ul>
@@ -61,7 +61,7 @@ export function renderHeader() {
         </ul>
     </div>
     <div class="navbar__contact">
-        <img src="../../public/images/Header/phone.svg" alt="contact icon">
+        <img src="..//images/Header/phone.svg" alt="contact icon">
         <div class="navbar__contact_tel">Call us any time <br> (704) 555-0127</div>
     </div>
   </nav>

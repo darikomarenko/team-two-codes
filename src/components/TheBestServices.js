@@ -4,7 +4,7 @@ export function renderTheBestServices() {
     const theBestServices = document.getElementById('theBestService');
     theBestServices.innerHTML = /*html*/`
     <div class='theBestServices__crane'>
-    <img src="../../public/images/TheBestServices/crane.png" class='theBestServices__crane-img' alt="crane">
+    <img src="..//images/TheBestServices/crane.png" class='theBestServices__crane-img' alt="crane">
   </div>
   <div class='theBestServices__blocks'>
     <div class='theBestServices__blocks-block'>
@@ -14,9 +14,9 @@ export function renderTheBestServices() {
         <p class='theBestServices__block-text'>In today's world, we're bombarded with choices. From streaming services to meal kits, it can be overwhelming to find the  best option.</p>
       </div>
       <div class='theBestServices__btn'>
-        <button class='theBestServices__btn-text'>See All <img src="../../public/images/TheBestServices/Arrow.svg"
+        <button class='theBestServices__btn-text'>See All <img src="..//images/TheBestServices/Arrow.svg"
             class='theBestServices__btn-arrow' alt="arrow"></button>
-        <img src="../../public/images/TheBestServices/Icon.png" class='theBestServices__btn-img' alt="man icon">
+        <img src="..//images/TheBestServices/Icon.png" class='theBestServices__btn-img' alt="man icon">
       </div>
     </div>
     <div class='theBestServices__blocks-slider sliderTheBestServices'></div>

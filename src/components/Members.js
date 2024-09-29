@@ -8,7 +8,7 @@ export function renderMembers() {
   <div class="team__info">
 
   <h5 class="team__h5">
-        <img src="../public/images/Reviews/Line.png" alt="line" class="team__line">
+        <img src="/images/Reviews/Line.png" alt="line" class="team__line">
         Our Team Members
       </h5>
       <h2 class="team__h2">Our Dedicated Team
@@ -19,7 +19,7 @@ export function renderMembers() {
   </div>
 
   <div class="team__photo">
-    <img src="../public/images/Members/person1.avif" alt="Team Photo" class="team__photo-img" id="team-photo">
+    <img src="/images/Members/person1.avif" alt="Team Photo" class="team__photo-img" id="team-photo">
   </div>
 
   <div class="team__list">
@@ -33,7 +33,7 @@ export function renderMembers() {
   
 </div>
 <div class="team__aside">
-            <img class="team__img" src="../public/images/Video-block/Architecture.png" alt="Architecture">
+            <img class="team__img" src="images/Video-block/Architecture.png" alt="Architecture">
         </div> </div>
     `;
 

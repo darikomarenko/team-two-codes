@@ -6,11 +6,11 @@ export function renderReviews() {
     videoBlock.innerHTML = `
     <div class="reviews">
     <div class="reviews__aside">
-      <img class="reviews__img" src="../public/images/Reviews/Architecture.png" alt="Architecture">
+      <img class="reviews__img" src="/images/Reviews/Architecture.png" alt="Architecture">
     </div>
     <div class="reviews__main">
       <h5 class="reviews__h5">
-        <img src="../public/images/Reviews/Line.png" alt="line" class="reviews__line">
+        <img src="/images/Reviews/Line.png" alt="line" class="reviews__line">
         Our Testimonials
       </h5>
       <h2 class="reviews__h2">What our Clients Say About our work</h2>
@@ -28,7 +28,7 @@ export function renderReviews() {
                   exceptional.</p>
                 <div class="testimonial-account">
                   <div class="testimonial-quate">
-                    <img src="../public/images/Reviews/Quate.png" alt="Quate" class="testimonial-quate-img">
+                    <img src="/images/Reviews/Quate.png" alt="Quate" class="testimonial-quate-img">
                   </div>
                   <div class="testimonial-account-container">
                     <h3 id="testimonial-name">Brooklyn Simmons</h3>
@@ -45,10 +45,10 @@ export function renderReviews() {
             </div>
 
             <div class="reviews__circle-images">
-        <img src="../public/images/Reviews/avatar1.jpeg" class="reviews__profile-photo reviews__profile-photo--active" data-index="0"
+        <img src="/images/Reviews/avatar1.jpeg" class="reviews__profile-photo reviews__profile-photo--active" data-index="0"
           alt="Brooklyn Simmons">
-        <img src="../public/images/Reviews/avatar2.jpeg" class="reviews__profile-photo" data-index="1" alt="Olivia Harper">
-        <img src="../public/images/Reviews/avatar3.jpeg" class="reviews__profile-photo" data-index="2" alt="Liam Bennett">
+        <img src="/images/Reviews/avatar2.jpeg" class="reviews__profile-photo" data-index="1" alt="Olivia Harper">
+        <img src="/images/Reviews/avatar3.jpeg" class="reviews__profile-photo" data-index="2" alt="Liam Bennett">
       </div>
           </div>
         </div>

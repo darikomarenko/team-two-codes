@@ -4,7 +4,7 @@ export function renderBlog() {
     const blog = document.getElementById('blog');
     blog.innerHTML = /*html*/`
     <div class="blog-container">
-    <h5 class="blog__h5"> <img src="../public/images/Video-block/Line.png" alt="line" class="blog__line"> Our Blog</h5>
+    <h5 class="blog__h5"> <img src="/images/Video-block/Line.png" alt="line" class="blog__line"> Our Blog</h5>
     <h2 class="blog__h2">Latest Insights and Updates</h2>
     <div class="blog-big-card-container">
 

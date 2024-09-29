@@ -14,7 +14,7 @@ export function renderWhatAbout() {
             <div class="whatAbout__block-description">
               <p class="whatAbout__block-descriptionText">In today's world, we're bombarded with choices. From streaming services to meal kits, it can be overwhelming.</p>
               <div class="whatAbout__block-section">
-                <button class="whatAbout__block-btn">Read More<img src="../../public/images/WhatAbout/arrow-white.png" class="whatAbout__block-btnImg" alt="arrow white"></button>
+                <button class="whatAbout__block-btn">Read More<img src="..//images/WhatAbout/arrow-white.png" class="whatAbout__block-btnImg" alt="arrow white"></button>
                 <div>
                     <p class="whatAbout__block-portrait">25+ Experience</p>
                     <p class="whatAbout__reflection">25+ Experience</p>
@@ -25,7 +25,7 @@ export function renderWhatAbout() {
           </div>
           <div class="whatAbout__slider-cont"></div>
         </div>
-        <img src="../../public/images/WhatAbout/Architecture.png" class="whatAbout__architecture" alt="Architecture right">
+        <img src="..//images/WhatAbout/Architecture.png" class="whatAbout__architecture" alt="Architecture right">
     `;
 
     

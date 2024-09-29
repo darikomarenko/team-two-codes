@@ -5,7 +5,7 @@ export default function renderTrustReliable() {
     const trustReliable = document.getElementById('trusted');
 
     trustReliable.innerHTML = /*html*/`
-  <img src="../../public/images/trustReliable/Architecture.svg" class='trustReliable__architecture' alt="Architecture img">
+  <img src="..//images/trustReliable/Architecture.svg" class='trustReliable__architecture' alt="Architecture img">
     <div class='trustReliable__block'>
     <p class='trustReliable__block-teame'><span class='trustReliable__span'>—</span> Our Company Status</p>
     <h2 class='trustReliable__block-title'>Trusted & Reliable</h2>
