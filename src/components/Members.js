@@ -1,5 +1,4 @@
 import '../assets/styles/members.scss';
-// import Swiper from 'swiper';
 
 export function renderMembers() {
     const members = document.getElementById('members');
@@ -36,10 +35,6 @@ export function renderMembers() {
 <div class="team__aside">
             <img class="team__img" src="./public/images/Video-block/Architecture.png" alt="Architecture">
         </div> </div>
-    
-
-
-
     `;
 
     const teamItems = document.querySelectorAll('.team__item');
@@ -53,8 +48,6 @@ export function renderMembers() {
         item.classList.add('team__item--active');
       });
     });
-      
-      
-      
+        
     
 }
